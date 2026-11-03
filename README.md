@@ -1,5 +1,4 @@
 # Resultado de Vendas
-
 Este projeto converte o exercício Vendas, feito em Portugol, para JavaScript.
 
 ## O que o programa faz
@@ -17,10 +16,6 @@ As vendas foram organizadas em um vetor. Assim, o `for` consegue somar todas sem
 
 ## Como executar
 No terminal, execute:
-
-```bash
-node resultadoDeVendas.js
-```
 
 ## Exemplo
 Com as vendas de R$ 1.000, R$ 2.000 e R$ 3.000, o total é R$ 6.000. Por isso, a mensagem mostrada é "Meta não atingida."
