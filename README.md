@@ -14,7 +14,7 @@ O programa pergunta as vendas de janeiro, fevereiro e marco. Depois soma os valo
 
 ## Como rodar
 
-Depois informe as tres vendas que o programa pedir.
+Informe as tres vendas que o programa pedir.
 
 ## Exemplo
 
