@@ -1,26 +1,26 @@
 # Resultado de Vendas
 
-- Este e um exercício da atividade de conversão de Portugol para JavaScript.
+Este projeto converte o exercício Vendas, feito em Portugol, para JavaScript.
 
-- O programa pergunta as vendas de:
-          janeiro, fevereiro e marco.
-- Depois soma os valores e mostra se a meta de R$ 17000 foi atingida.
+## O que o programa faz
+O programa guarda três valores de vendas em uma lista, soma todos eles e verifica se a meta de R$ 17.000 foi atingida.
 
-# O que foi usado
+## O que foi usado
+- Variáveis para guardar o total e a meta
+- Vetor para guardar as três vendas
+- Laço `for` para passar por cada venda e fazer a soma
+- Condição `if/else` para verificar se a meta foi atingida
+- `console.log` para mostrar os resultados
 
-- Variaveis - para guardar as vendas e o total
-- Entrada e saida de dados
-- Vetor - para guardar as tres vendas
-- Laço - "for" para somar as vendas
-- Condicao - "if/else" para verificar a meta
+## Melhoria feita
+As vendas foram organizadas em um vetor. Assim, o `for` consegue somar todas sem precisar escrever cada conta separadamente.
 
-# Como rodar
+## Como executar
+No terminal, execute:
 
-- Informe as tres vendas que o programa pedir.
+```bash
+node resultadoDeVendas.js
+```
 
-# Exemplo
-
-- Se as vendas forem 5000, 6000 e 7000, o total sera 18000. A meta foi atingida.
-
-# Feito 
-- Para a atividade em dupla do Jovem Tech.
+## Exemplo
+Com as vendas de R$ 1.000, R$ 2.000 e R$ 3.000, o total é R$ 6.000. Por isso, a mensagem mostrada é "Meta não atingida."
