@@ -14,8 +14,6 @@ O programa pergunta as vendas de janeiro, fevereiro e marco. Depois soma os valo
 
 ## Como rodar
 
-Digite no terminal: node resultadoDeVendas.js
-
 Depois informe as tres vendas que o programa pedir.
 
 ## Exemplo
