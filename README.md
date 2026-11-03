@@ -20,4 +20,5 @@ Informe as tres vendas que o programa pedir.
 
 Se as vendas forem 5000, 6000 e 7000, o total sera 18000. A meta foi atingida.
 
-Feito por Monansci para a atividade em dupla do Jovem Tech.
+## Feito 
+para a atividade em dupla do Jovem Tech.
