@@ -1,5 +1,5 @@
 // Exercício: resultado de vendas
-// Assuntos usados: variáveis, entrada, contas e condição.
+// Assuntos usados: variáveis, entrada, soma, condição e repetição.
 
 const readline = require("readline");
 
@@ -8,18 +8,30 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
-rl.question("Venda de janeiro: R$ ", function (janeiro) {
-  rl.question("Venda de fevereiro: R$ ", function (fevereiro) {
-    rl.question("Venda de março: R$ ", function (marco) {
-      janeiro = Number(janeiro);
-      fevereiro = Number(fevereiro);
-      marco = Number(marco);
+const meses = ["janeiro", "fevereiro", "março"];
+let vendas = [];
+let posicao = 0;
 
-      const total = janeiro + fevereiro + marco;
+function perguntarVenda() {
+  rl.question("Venda de " + meses[posicao] + ": R$ ", function (valor) {
+    vendas[posicao] = Number(valor);
+    posicao = posicao + 1;
+
+    if (posicao < 3) {
+      perguntarVenda();
+    } else {
+      let total = 0;
+
+      // Laço de repetição para somar as 3 vendas.
+      for (let i = 0; i < 3; i++) {
+        total = total + vendas[i];
+      }
+
       const meta = 17000;
 
       console.log("Total de vendas: R$ " + total);
 
+      // Condição para ver se a meta foi alcançada.
       if (total >= meta) {
         console.log("Meta atingida!");
       } else {
@@ -27,6 +39,8 @@ rl.question("Venda de janeiro: R$ ", function (janeiro) {
       }
 
       rl.close();
-    });
+    }
   });
-});
+}
+
+perguntarVenda();
