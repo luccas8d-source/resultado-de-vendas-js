@@ -1,6 +1,3 @@
-// Exercício: resultado de vendas
-// Assuntos usados: variáveis, entrada, soma, condição e repetição.
-
 const readline = require("readline");
 
 const rl = readline.createInterface({
