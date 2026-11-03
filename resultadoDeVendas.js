@@ -19,7 +19,6 @@ function perguntarVenda() {
     } else {
       let total = 0;
 
-      // Laço de repetição para somar as 3 vendas.
       for (let i = 0; i < 3; i++) {
         total = total + vendas[i];
       }
@@ -27,8 +26,7 @@ function perguntarVenda() {
       const meta = 17000;
 
       console.log("Total de vendas: R$ " + total);
-
-      // Condição para ver se a meta foi alcançada.
+      
       if (total >= meta) {
         console.log("Meta atingida!");
       } else {
